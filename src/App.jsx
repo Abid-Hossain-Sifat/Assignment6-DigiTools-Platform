@@ -2,6 +2,7 @@
 import './App.css'
 import Banner from './Banner'
 import Navbar from './Navbar'
+import Statistics from './Statistics'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <>
     <Navbar></Navbar>
     <Banner></Banner>
+    <Statistics></Statistics>
     </>
   )
 }

@@ -23,7 +23,7 @@ const Banner = () => {
                     <p>Explore Products</p>
                 </button>
 
-                <button className=" btn h-auto w-auto relative flex items-center gap-2.5 rounded-full py-3 px-4 bg-white before:absolute before:inset-0 before:rounded-full before:p-px before:bg-linear-to-r before:from-[#4F39F6] before:to-[#9514FA] before:-z-10">
+                <button className=" btn btn-outline h-auto w-auto flex items-center gap-2.5 rounded-full py-3 px-4">
                     <img className='w-5 h-5' src={playImg} alt="" />
                     <p className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>Watch Demo</p>
                 </button>
