@@ -1,5 +1,6 @@
 
 import './App.css'
+import Banner from './Banner'
 import Navbar from './Navbar'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
     <Navbar></Navbar>
+    <Banner></Banner>
     </>
   )
 }
