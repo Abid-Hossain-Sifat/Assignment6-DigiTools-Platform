@@ -1,13 +1,13 @@
 
 import './App.css'
-import Banner from './Banner'
-import Footer from './Footer'
-import Navbar from './Navbar'
-import Started from './Started'
-import Statistics from './Statistics'
-import Subscription from './Subscription'
-import Tabs from './Tabs'
-import Transform from './Transform'
+import Banner from './Components/Banner'
+import Footer from './Components/Footer'
+import Navbar from './Components/Navbar'
+import Started from './Components/Started'
+import Statistics from './Components/Statistics'
+import Subscription from './Components/Subscription'
+import Tabs from './Components/Tabs'
+import Transform from './Components/Transform'
 
 function App() {
 
