@@ -3,8 +3,8 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className='bg-[#101727]'>
-      <div className='flex justify-between max-w-[80%] mx-auto pt-30 pb-20'>
-        <div className='space-y-4'>
+      <div className='grid grid-cols-2 md:grid-cols-3 lg:flex lg:justify-between gap-10 max-w-[90%] md:max-w-[80%] mx-auto pt-16 md:pt-30 pb-12 md:pb-20'>
+        <div className='space-y-4 col-span-2 md:col-span-3 lg:col-span-1'>
             <h1 className='text-4xl font-extrabold text-white'>
                 DigiTools
             </h1>
@@ -33,7 +33,7 @@ const Footer = () => {
             <a className="text-[16px] leading-6">Community</a> 
             <a className="text-[16px] leading-6">Contact</a> 
         </div>
-        <div className='space-y-4'>
+        <div className='space-y-4 col-span-2 md:col-span-3 lg:col-span-1'>
             <h6 className="text-[20px] leading-[28px] font-medium text-white">Social</h6>
             <div className="grid grid-flow-col gap-4">
                 <a className="bg-white p-3 rounded-full shadow-md flex items-center justify-center transition-transform hover:scale-110 group">
@@ -58,11 +58,11 @@ const Footer = () => {
       </div>
       
       <div className='bg-[#E5E7EB50] h-px max-w-[80%] mx-auto'></div>
-      <div className='flex justify-between max-w-[80%] mx-auto mt-7.5 pb-7.5'>
+      <div className='flex flex-col md:flex-row justify-center md:justify-between items-center gap-6 max-w-[80%] mx-auto mt-8 pb-8 text-center md:text-left'>
         <div>
             <p className='text-[16px] leading-6 text-[#FAFAFA]'>© 2026 Digitools. All rights reserved.</p>
         </div>
-        <div className='flex gap-20'>
+        <div className='flex flex-wrap justify-center gap-6 md:gap-10 lg:gap-20'>
             <p className='text-[16px] leading-6 text-[#FAFAFA]'>
                 Privacy Policy
             </p>

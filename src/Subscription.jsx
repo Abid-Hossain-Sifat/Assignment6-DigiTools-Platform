@@ -2,7 +2,7 @@ import React from 'react'
 
 const Subscription = () => {
   return (
-    <div className='pb-30'>
+    <div className='pb-16 md:pb-30 px-4 md:px-0'>
       <div className='max-w-[80%] mx-auto'>
         <div className='text-center space-y-4 mb-10'>
             <h2 className='text-5xl font-extrabold text-[#101727]'>
@@ -13,9 +13,9 @@ const Subscription = () => {
             </p>
         </div>
         {/* card container  */}
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-40'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 items-start'>
           {/* card1  */}
-            <div className=' p-8 bg-[#F8F9FB] border border-gray-100 rounded-3xl shadow-sm font-sans'>
+            <div className=' p-8 bg-[#F8F9FB] border border-gray-100 rounded-3xl shadow-sm transition-all duration-300 hover:bg-white/70 hover:backdrop-blur-md hover:shadow-xl hover:-translate-y-2 cursor-pointer '>
               <h2 className='text-2xl font-bold text-[#1A202C]'>Starter</h2>
               <p className='mt-2 text-[#627382] text-[16px] leading-5'>Perfect for getting started</p>
 
@@ -58,7 +58,7 @@ const Subscription = () => {
               </button>
             </div>
             {/* card2  */}
-            <div className='relative p-8 bg-linear-to-r from-[#4F39F6] to-[#9514FA] border border-gray-100 rounded-3xl shadow-sm font-sans'>
+            <div className='relative p-8 bg-linear-to-r from-[#4F39F6] to-[#9514FA] border border-white/20 rounded-3xl shadow-xl w-full md:scale-105 z-10 my-6 md:my-0 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:brightness-110 cursor-pointer'>
 
               <div className='absolute -top-4 left-1/2 -translate-x-1/2 bg-[#FEF3C6] px-4 py-1 rounded-full shadow-md border border-[#FEF3C6]'>
                 <p className='text-[#BB4D00] text-[14px] font-medium whitespace-nowrap'>
@@ -122,7 +122,7 @@ const Subscription = () => {
               </button>
             </div>
             {/* card3  */}
-            <div className=' p-8 bg-[#F8F9FB] border border-gray-100 rounded-3xl shadow-sm font-sans'>
+            <div className=' p-8 bg-[#F8F9FB] border border-gray-100 rounded-3xl shadow-sm transition-all duration-300 hover:bg-white/70 hover:backdrop-blur-md hover:shadow-xl hover:-translate-y-2 cursor-pointer'>
               <h2 className='text-2xl font-bold text-[#1A202C]'>Enterprise</h2>
               <p className='mt-2 text-[#627382] text-[16px] leading-5'>For teams and businesses</p>
 
