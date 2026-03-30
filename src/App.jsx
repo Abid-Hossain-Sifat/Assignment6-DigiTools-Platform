@@ -6,6 +6,7 @@ import Started from './Started'
 import Statistics from './Statistics'
 import Subscription from './Subscription'
 import Tabs from './Tabs'
+import Transform from './Transform'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     <Tabs></Tabs>
     <Started></Started>
     <Subscription></Subscription>
+    <Transform></Transform>
     </>
   )
 }
