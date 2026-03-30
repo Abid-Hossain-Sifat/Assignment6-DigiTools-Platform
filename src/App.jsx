@@ -1,6 +1,7 @@
 
 import './App.css'
 import Banner from './Banner'
+import Footer from './Footer'
 import Navbar from './Navbar'
 import Started from './Started'
 import Statistics from './Statistics'
@@ -19,6 +20,7 @@ function App() {
     <Started></Started>
     <Subscription></Subscription>
     <Transform></Transform>
+    <Footer></Footer>
     </>
   )
 }
