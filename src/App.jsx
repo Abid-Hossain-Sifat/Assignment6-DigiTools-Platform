@@ -4,6 +4,7 @@ import Banner from './Banner'
 import Navbar from './Navbar'
 import Started from './Started'
 import Statistics from './Statistics'
+import Subscription from './Subscription'
 import Tabs from './Tabs'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Statistics></Statistics>
     <Tabs></Tabs>
     <Started></Started>
+    <Subscription></Subscription>
     </>
   )
 }

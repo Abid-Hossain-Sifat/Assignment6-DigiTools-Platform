@@ -79,4 +79,4 @@ const Started = () => {
   )
 }
 
-export default Started;
+export default Started
