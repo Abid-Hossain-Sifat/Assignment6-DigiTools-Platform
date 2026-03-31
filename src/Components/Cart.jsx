@@ -16,7 +16,9 @@ const Cart = ({ cartItems, removeFromCart, clearCart }) => {
               </svg>
             </div>
             <h1 className="text-[30px] md:text-[36px] font-bold text-[#0F172A] mb-4">Your cart is empty</h1>
-            <p className="text-[#64748B] text-lg max-w-md">Click Products any time to review the products you select.</p>
+            <p className="text-[#64748B] text-lg max-w-md">
+                Click on the <span className="font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">"Products"</span> tab to explore and add your favorite tools to the cart.
+            </p>
           </div>
         </div>
       </div>

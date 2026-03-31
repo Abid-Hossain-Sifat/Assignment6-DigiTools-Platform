@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Products from './Products';
 import Cart from './Cart';
-// Toastify ইমপোর্ট করুন
+// Toastify ইমপোর্ট
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -9,11 +9,16 @@ const Tabs = () => {
   const [activeTab, setActiveTab] = useState('products');
   const [cartItems, setCartItems] = useState([]);
 
+  // কার্ট আপডেট হলে ইভেন্ট ডিসপ্যাচ করা হচ্ছে
+  useEffect(() => {
+    const event = new CustomEvent('cartUpdate', { detail: cartItems.length });
+    window.dispatchEvent(event);
+  }, [cartItems]);
+
   const addToCart = (product) => {
     const isExist = cartItems.find(item => item.id === product.id);
     if (!isExist) {
       setCartItems([...cartItems, product]);
-      // Add 
       toast.success(`Product added to cart!`, {
         position: "top-right",
         autoClose: 2000,
@@ -23,9 +28,7 @@ const Tabs = () => {
   };
 
   const removeFromCart = (id) => {
-    const itemToRemove = cartItems.find(item => item.id === id);
     setCartItems(cartItems.filter(item => item.id !== id));
-    // Remove 
     toast.error(`Product removed from cart!`, {
       position: "top-right",
       autoClose: 2000,
@@ -35,7 +38,6 @@ const Tabs = () => {
 
   const clearCart = () => {
     setCartItems([]);
-    // Cheackout 
     toast.info("Order placed successfully!", {
       position: "top-right",
       autoClose: 3000,
@@ -58,10 +60,16 @@ const Tabs = () => {
         </div>
 
         <div className="inline-flex p-1.5 border border-gray-100 rounded-full bg-white shadow-sm mb-10">
-          <button onClick={() => setActiveTab('products')} className={`px-8 md:px-10 py-3 rounded-full font-semibold transition-all duration-300 ${activeTab === 'products' ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white shadow-lg' : 'text-[#0B132A] hover:bg-gray-50'}`}>
+          <button 
+            onClick={() => setActiveTab('products')} 
+            className={`px-8 md:px-10 py-3 rounded-full font-semibold transition-all duration-300 ${activeTab === 'products' ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white shadow-lg' : 'text-[#0B132A] hover:bg-gray-50'}`}
+          >
             Products
           </button>
-          <button onClick={() => setActiveTab('cart')} className={`px-8 md:px-10 py-3 rounded-full font-semibold transition-all duration-300 ${activeTab === 'cart' ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white shadow-lg' : 'text-[#0B132A] hover:bg-gray-50'}`}>
+          <button 
+            onClick={() => setActiveTab('cart')} 
+            className={`px-8 md:px-10 py-3 rounded-full font-semibold transition-all duration-300 ${activeTab === 'cart' ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white shadow-lg' : 'text-[#0B132A] hover:bg-gray-50'}`}
+          >
             Cart ({cartItems.length})
           </button>
         </div>
