@@ -34,7 +34,7 @@ const Footer = () => {
             <a className="text-[16px] leading-6">Contact</a> 
         </div>
         <div className='space-y-4 col-span-2 md:col-span-3 lg:col-span-1'>
-            <h6 className="text-[20px] leading-[28px] font-medium text-white">Social</h6>
+            <h6 className="text-[20px] leading-7 font-medium text-white">Social</h6>
             <div className="grid grid-flow-col gap-4">
                 <a className="bg-white p-3 rounded-full shadow-md flex items-center justify-center transition-transform hover:scale-110 group">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-zinc-800 group-hover:text-[#E4405F] transition-colors">

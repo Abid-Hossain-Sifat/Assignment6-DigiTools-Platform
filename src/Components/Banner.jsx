@@ -13,7 +13,7 @@ const Banner = () => {
           
           <div className='flex justify-center md:justify-start gap-1.5 bg-[#E1E7FF] py-2 px-4 max-w-fit rounded-full mx-auto md:mx-0'>
             <img className='w-4 h-4 my-auto' src={TooltipImg} alt="" />
-            <p className='bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent text-sm md:text-base'>
+            <p className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent text-sm md:text-base'>
               New: AI-Powered Tools Available
             </p>
           </div>
@@ -24,13 +24,13 @@ const Banner = () => {
           
           <div className='flex flex-col sm:flex-row gap-4 justify-center md:justify-start'>
             
-            <button className='btn h-auto w-auto bg-gradient-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white py-3 px-4 hover:shadow-sm'>
+            <button className='btn h-auto w-auto bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white py-3 px-4 hover:shadow-sm'>
               <p>Explore Products</p>
             </button>
 
-            <button className="btn h-auto w-auto relative flex items-center justify-center gap-2.5 rounded-full py-3 px-4 bg-white before:absolute before:inset-0 before:rounded-full before:p-px before:bg-gradient-to-r before:from-[#4F39F6] before:to-[#9514FA] before:-z-10">
+            <button className="btn btn-outline border-[#9514FA] h-auto w-auto flex items-center justify-center gap-2.5 rounded-full py-3 px-4 bg-white ">
               <img className='w-5 h-5' src={playImg} alt="" />
-              <p className='bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>
+              <p className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>
                 Watch Demo
               </p>
             </button>
