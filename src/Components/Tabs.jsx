@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import Products from './Products';
 import Cart from './Cart';
-// Toastify ইমপোর্ট
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -9,7 +8,7 @@ const Tabs = () => {
   const [activeTab, setActiveTab] = useState('products');
   const [cartItems, setCartItems] = useState([]);
 
-  // কার্ট আপডেট হলে ইভেন্ট ডিসপ্যাচ করা হচ্ছে
+ 
   useEffect(() => {
     const event = new CustomEvent('cartUpdate', { detail: cartItems.length });
     window.dispatchEvent(event);
