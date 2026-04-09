@@ -1,3 +1,10 @@
+# 🌐 Live Demo
+### 🔗 Visit Now:
+
+👉 https://a6-digitools-platfrom-by-abid.netlify.app/
+
+### Experience the platform in real-time and explore digital tools instantly.
+----
 #  DigiTools Platform
 
 A streamlined digital marketplace for AI models and software subscriptions.
@@ -51,3 +58,52 @@ It focuses on *speed, usability, and clean UI*, making it easy for users to brow
 <br />
 
 ---
+
+
+## 🚀 Run Locally
+
+Follow these steps to run the DigiTools Platform on your local machine:
+
+## 📌 Prerequisites
+
+Make sure you have the following installed:
+
+- 🟢 Node.js (v14 or higher)
+- 📦 npm (comes with Node.js)
+- 💻 A code editor like VS Code
+- 📥 1. Clone the Repository
+```js
+git clone https://github.com/Abid-Hossain-Sifat/DigiTools-Platform.git
+cd DigiTools-Platform
+```
+- 📦 2. Install Dependencies
+```js
+npm install
+```
+## Or download the ZIP file and extract it.
+
+### This will install all required packages like React, Tailwind CSS, DaisyUI, and others.
+
+- ▶️ 3. Start the Development Server
+```js
+npm run dev
+```
+
+### If the project uses Create React App, use:
+
+### npm start
+
+
+- 🌐 4. Open in Browser
+
+### After running the server, open your browser and go to:
+
+http://localhost:5173
+
+or
+
+http://localhost:3000
+
+
+
+### Now you can explore and modify the DigiTools Platform locally 🎉
